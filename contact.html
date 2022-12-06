@@ -7,15 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <!-- site icon -->
-    <link rel="icon" type="image/x-icon" href="./assets/icons/ap_logo.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/main.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    <!-- Eigen geschreven CSS en javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> <!-- Eigen geschreven CSS en javascript -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <link rel="stylesheet" href="./css/map.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="./js/map.js" defer></script>
+
 
 </head>
 
@@ -54,12 +60,15 @@
         <h1 class="text-center text-decoration-underline">&nbsp;Contact&nbsp;</h1><br><br>
         <h2 class="text-center">Kies hier onder wie U wilt contacteren</h2>
 
-        <!-- contact secction -->
+        <!-- contact section -->
         <section>
             <div class="text-center">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact_owner">Eigenaar</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact_webmaster">Webmaster</button>
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact_louis">Louis Beke</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#contact_owner">Eigenaar</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#contact_webmaster">Webmaster</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#contact_louis">Louis Beke</button>
             </div>
 
             <!-- contact formulier voor naar de eigenaar te sturen -->
@@ -75,8 +84,9 @@
                             <form method="POST" action="https://formsubmit.co/438e93b71820d08cbd8feb9a045b8e21"
                                 enctype="multipart/form-data">
                                 <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="http://louisplayz.xyz/thanks.html">
-            
+                                <input type="hidden" name="_next" value="http://louisbeke.xyz/thanks.html">
+                                <input type="hidden" name="_subject" value="louisplayz.xyz to owner">
+
                                 <fieldset class="row g-3 mb-3">
                                     <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
                                     <div class="col-md-6">
@@ -85,7 +95,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="lastName" class="form-label">Achternaam <span>*</span></label>
-                                        <input type="text" class="form-control" name="Achternaam" id="lastName" required>
+                                        <input type="text" class="form-control" name="Achternaam" id="lastName"
+                                            required>
                                     </div>
                                     <div class="col">
                                         <label for="mail" class="form-label">E-mail <span>*</span></label>
@@ -93,18 +104,18 @@
                                             placeholder="example@example.com">
                                     </div>
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                            style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
                                         <label for="floatingTextarea2" name="message">Je probleem</label>
                                     </div>
-            
+
                                     <div class="col">
                                         <label for="formFile" class="form-label">Voeg bestanden toe</label>
                                         <input class="form-control" type="file" id="formFile" name="attachment">
                                     </div>
                                 </fieldset>
-            
-            
+
+
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary">Verstuur</button>
                                 </div>
@@ -126,9 +137,9 @@
                             <form method="POST" action="https://formsubmit.co/15ee6943ce4607b7463c0edb53eec3dc"
                                 enctype="multipart/form-data">
                                 <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="http://louisplayz.xyz/thanks.html">
-								<input type="hidden" name="_subject" value="Report of the site louisplayz.xyz">
-            
+                                <input type="hidden" name="_next" value="http://louisbeke.xyz/thanks.html">
+                                <input type="hidden" name="_subject" value="Report of the site louisplayz.xyz">
+
                                 <fieldset class="row g-3 mb-3">
                                     <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
                                     <div class="col-md-6">
@@ -137,7 +148,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="lastName" class="form-label">Achternaam <span>*</span></label>
-                                        <input type="text" class="form-control" name="Achternaam" id="lastName" required>
+                                        <input type="text" class="form-control" name="Achternaam" id="lastName"
+                                            required>
                                     </div>
                                     <div class="col">
                                         <label for="mail" class="form-label">E-mail <span>*</span></label>
@@ -145,17 +157,18 @@
                                             placeholder="example@example.com">
                                     </div>
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="message"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea" name="message"></textarea>
                                         <label for="floatingTextarea">Type hier je bericht.</label>
                                     </div>
-            
+
                                     <div class="col">
                                         <label for="formFile" class="form-label">Voeg bestanden toe</label>
                                         <input class="form-control" type="file" id="formFile" name="attachment">
                                     </div>
                                 </fieldset>
-            
-            
+
+
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary">Verstuur</button>
                                 </div>
@@ -177,8 +190,9 @@
                             <form method="POST" action="https://formsubmit.co/438e93b71820d08cbd8feb9a045b8e21"
                                 enctype="multipart/form-data">
                                 <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="http://louisplayz.xyz/thanks.html">
-            
+                                <input type="hidden" name="_next" value="http://louisbeke.xyz/thanks.html">
+                                <input type="hidden" name="_subject" value="louisplayz.xyz to Louis">
+
                                 <fieldset class="row g-3 mb-3">
                                     <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
                                     <div class="col-md-6">
@@ -187,7 +201,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="lastName" class="form-label">Achternaam <span>*</span></label>
-                                        <input type="text" class="form-control" name="Achternaam" id="lastName" required>
+                                        <input type="text" class="form-control" name="Achternaam" id="lastName"
+                                            required>
                                     </div>
                                     <div class="col">
                                         <label for="mail" class="form-label">E-mail <span>*</span></label>
@@ -195,18 +210,18 @@
                                             placeholder="example@example.com">
                                     </div>
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                            style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
                                         <label for="floatingTextarea2" name="message">Je probleem</label>
                                     </div>
-            
+
                                     <div class="col">
                                         <label for="formFile" class="form-label">Voeg bestanden toe</label>
                                         <input class="form-control" type="file" id="formFile" name="attachment">
                                     </div>
                                 </fieldset>
-            
-            
+
+
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary">Verstuur</button>
                                 </div>
@@ -216,10 +231,67 @@
                 </div>
             </div>
         </section>
+        <br>
+        <!-- openings houres -->
+        <section>
+                <h2 id="op" class="text-center">Openingsuren</h2>
+                    <div class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <p class="col-md-auto">Maandag</p>
+                            <p class="col-md-auto">08:00</p>
+                            <p class="col-md-auto">22:00</p>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <p class="col-md-auto">Dinsdag</p>
+                            <p class="col-md-auto">08:00</p>
+                            <p class="col-md-auto">22:00</p>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <p class="col-md-auto">Woensdag</p>
+                            <p class="col-md-auto">08:00</p>
+                            <p class="col-md-auto">22:00</p>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <p class="col-md-auto">Donderdag</p>
+                            <p class="col-md-auto">08:00</p>
+                            <p class="col-md-auto">22:00</p>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <p class="col-md-auto">Vrijdag</p>
+                            <p class="col-md-auto">08:00</p>
+                            <p class="col-md-auto">22:00</p>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <p class="col-md-auto">Zaterdag</p>
+                            <p class="col-md-auto">11:00</p>
+                            <p class="col-md-auto">16:00</p>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row justify-content-md-center">
+                            <p class="col-md-auto">Zondag</p>
+                            <p class="col-md-auto">Gesloten</p>
+                        </div>
+                    </div>
+        </section>
+        <br>
+        <!-- map -->
+        <div id="lsmap"></div>
+
     </main>
 
     <aside></aside>
-	<br>
+    <br>
     <footer class="text-center">&copy; 2020 - 2022 LSystemus | Created by Ruben Schadron</footer>
 </body>
 
