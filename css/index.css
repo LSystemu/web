@@ -2,8 +2,6 @@ body {
     background-color: #7bfcb5ac;
 }
 
-
-
 p#op{
     color: #320b61;
 }
@@ -11,4 +9,3 @@ p#op{
 h1, h2, h3, h4, h5, h6, p, figcaption, footer, header{
     color: rgb(0, 0, 0)
 }
-
