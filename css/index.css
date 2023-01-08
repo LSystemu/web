@@ -9,3 +9,60 @@ p#op{
 h1, h2, h3, h4, h5, h6, p, figcaption, footer, header{
     color: rgb(0, 0, 0)
 }
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.apply_form{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(238, 231, 150);
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 600px;
+  max-width: 100%;
+  padding: 1cm;
+}
+
+#form label {
+  text-align: start;
+  border-radius: 4px;
+  color: rgb(7, 135, 73);
+  font-family: inherit;
+  font-size: 20px;
+  text-decoration: underline;
+  width: 100%;
+}
+#form input, #form select, ::placeholder{
+  text-align: start;
+  background-color: #8f8f92;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+#form button {
+  background-color: #5866ef;
+  border: 2px solid #5866ef;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
