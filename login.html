@@ -1,77 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="css/login-page.css">
-  <script defer src="js/login-page.js"></script>
-  <link rel="icon" type="image/x-icon" href="./assets/icons/main.png">
+    <title>Login</title>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-31B8SDBETB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-31B8SDBETB');
-</script>
-
 <body>
-  <main id="main-holder">
-    <nav class="navbar navbar-expand-lg bg-transparant">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/icons/main.png" alt="" width="30" height="30">
-        </a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Team</a>
-            </li>
-            <li class="nav-item">
-                      <a class="nav-link" href="login.html">Log in</a>
-                  </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="apply.html">Work with us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="links.html">Links</a>
-            </li>
-          </ul>
-        </div> -->
-      </div>
-    </nav>
-
-    <img src="./assets/icons/main.png" alt="" width="100" height="100">
-    <h1 id="login-header">Login</h1>
-
-    <div id="login-error-msg-holder">
-      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-    </div>
-
-    <form id="login-form">
-      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-      <input type="submit" value="Login" id="login-form-submit">
+    <h1>Login</h1>
+    <form action="php/login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Login">
     </form>
-
-  </main>
-  <footer class="text-center">&copy; 2020 - 2023 LSystemus | Created by Ruben Schadron</footer>
-
 </body>
-
 </html>
